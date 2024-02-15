@@ -27,7 +27,7 @@ gsap.to("#hero-content, #hero-img", {
 
 
 const typed = new Typed("#auto-type", {
-    strings: ["Electrician ", "Plumbing ","House help ","Carpenter", "Salon ", "Barber ", "Laundry"],
+    strings: ["Electrician ", "Plumbing ","Cleaning ","Carpenter", "Salon ", "Barber ", "Laundry"],
     typeSpeed: 150,
     backSpeed: 150,
     loop: true,
