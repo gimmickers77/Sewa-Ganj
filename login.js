@@ -1,38 +1,3 @@
-// alert("helo")
-gsap.registerPlugin("ScrollTrigger");
-
-gsap.to("#navbar", {
-    scale:0.99,
-    backgroundColor: "#02281E",
-    scrollTrigger: {
-        trigger: "#about",
-        // markers: true,
-        start: "top bottom",
-        end: "top top",
-        scrub: 2
-    }    
-})
-
-gsap.to("#hero-content, #hero-img", {
-    y:300,
-    opacity: 0.3,
-    scrollTrigger: {
-        trigger: "#about",
-        // markers: true,
-        start: "top 40%",
-        end: "top top",
-        scrub:2
-    }
-})
-
-
-const typed = new Typed("#auto-type", {
-    strings: ["Electrician ", "Plumbing ","Cleaning ","Carpenter", "Salon ", "Barber ", "Laundry"],
-    typeSpeed: 150,
-    backSpeed: 150,
-    loop: true,
-})
-
 
 const home = document.querySelector("#home");
 const bg1 = document.querySelector("#bg-compo-1");
@@ -78,9 +43,3 @@ home.addEventListener("mouseover", (coordinates) => {
         ease: "power3.out"
     })
 })
-
-
-const year = new Date().getFullYear();
-console.log(year);
-
-document.querySelector("#year").innerText = year;
