@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sewa-Ganj</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="scroll-smooth">
+
+    <div id="main">
+        <!-- home -->
+
+        <!-- ads -->
+        <div class="fixed bottom-0 h-[100px] w-full bg-slate-400"> for ads</div>
+
+        <div class="relative h-screen w-full bg-gradient-to-b from-emerald-800 to-teal-500 overflow-hidden" id="home">
+            <!-- nav bar -->
+            <nav id="navbar"
+                class="fixed z-50 max-lg:h-[70px] h-[100px] w-full px-[10%] text-white text-lg flex justify-between items-center rounded-2xl">
+                <div id="logo">
+                    <img class="max-lg:w-[70%]" src="./images/logo.svg" alt="logo">
+                </div>
+                <div class="flex gap-10 max-lg:hidden">
+                    <a class="transition ease-in-out hover:scale-105 hover:text-[#92AF19] " href="#home">Home</a>
+                    <a class="transition ease-in-out hover:scale-105 hover:text-[#92AF19] " href="#about">About</a>
+                    <a class="transition ease-in-out hover:scale-105 hover:text-[#92AF19] "
+                        href="#services">Services</a>
+                    <a class="transition ease-in-out hover:scale-105 hover:text-[#92AF19] "
+                        href="#contacts">Contacts</a>
+                </div>
+                <div class="flex items-center gap-5 max-lg:hidden">
+                    <a class="transition ease-in-out hover:scale-105 hover:text-[#92AF19]" href="/login">Login</a>
+                    <a class="transition ease-in-out hover:scale-110 hover:text-[#92af19] px-5 hover:bg-white py-1 bg-[#92AF19] rounded-full"
+                        href="/signup">Sign up</a>
+                </div>
+
+                <div class="lg:hidden">
+                    <img src="./images/menu.svg" alt="menu">
+                </div>
+            </nav>
+
+
+            <!-- bg1 -->
+            <div id="bg-compo-1"
+                class="hidden z-0 lg:flex scale-0 opacity-0 transform translate-x-[-1/2] translate-y-[-1/2]">
+                <div class="left-[30vw] top-[25vw] h-20 w-20 bg-white absolute rounded-2xl opacity-25"><img
+                        src="../images/lghero.svg" alt=""></div>
+                <div class="left-[25vw] top-[15vw] h-20 w-20 bg-white absolute rounded-2xl opacity-25"></div>
+                <div class="left-[25vw] top-[35vw] h-20 w-20 bg-white absolute rounded-2xl opacity-25"></div>
+                <div class="left-[2vw] top-[25vw] h-20 w-20 bg-white absolute rounded-2xl opacity-25"></div>
+                <div class="left-[12vw] bottom-[-5vw] h-20 w-20 bg-white absolute rounded-2xl opacity-25"></div>
+                <div class="left-[45vw] bottom-[5vw] h-20 w-20 bg-white absolute rounded-2xl opacity-25"></div>
+                <div class="right-[20vw] top-[35vw] h-20 w-20 bg-white absolute rounded-2xl opacity-25"></div>
+                <div class="right-[15vw] top-[20vw] h-20 w-20 bg-white absolute rounded-2xl opacity-25"></div>
+                <div class="right-[5vw] bottom-[0vw] h-20 w-20 bg-white absolute rounded-2xl opacity-25"></div>
+                <div class="right-[45vw] top-[37vw] h-20 w-20 bg-white absolute rounded-2xl opacity-25"></div>
+                <div class="right-[25vw] bottom-[-5vw] h-20 w-20 bg-white absolute rounded-2xl opacity-25"></div>
+            </div>
+            <!-- bg2 -->
+            <div id="bg-compo-2"
+                class="hidden z-0 lg:flex scale-0 opacity-0 transform translate-x-[-1/2] translate-y-[-1/2]">
+                <div class="left-[35vw] top-[20vw] h-14 w-14 bg-white absolute rounded-2xl opacity-15"></div>
+                <div class="left-[20vw] top-[10vw] h-14 w-14 bg-white absolute rounded-2xl opacity-15"></div>
+                <div class="left-[35vw] top-[30vw] h-14 w-14 bg-white absolute rounded-2xl opacity-15"></div>
+                <div class="left-[15vw] top-[20vw] h-14 w-14 bg-white absolute rounded-2xl opacity-15"></div>
+                <div class="left-[5vw] bottom-[25vw] h-14 w-14 bg-white absolute rounded-2xl opacity-15"></div>
+                <div class="left-[45vw] bottom-[20vw] h-14 w-14 bg-white absolute rounded-2xl opacity-15"></div>
+                <div class="right-[30vw] top-[30vw] h-14 w-14 bg-white absolute rounded-2xl opacity-15"></div>
+                <div class="right-[35vw] top-[20vw] h-14 w-14 bg-white absolute rounded-2xl opacity-15"></div>
+                <div class="right-[50vw] top-[20vw] h-14 w-14 bg-white absolute rounded-2xl opacity-15"></div>
+                <div class="right-[5vw] bottom-[30vw] h-14 w-14 bg-white absolute rounded-2xl opacity-15"></div>
+                <div class="right-[15vw] bottom-[20vw] h-14 w-14 bg-white absolute rounded-2xl opacity-15"></div>
+                <div class="right-[45vw] bottom-[15vw] h-14 w-14 bg-white absolute rounded-2xl opacity-15"></div>
+
+            </div>
+
+            <!-- hero -->
+            <div class="grid grid-cols-3 h-screen max-lg:pt-[70px] pt-[100px] px-[10%] text-white">
+                <!-- col 1 -->
+                <div id="hero-content" class="col-span-1 flex flex-col  justify-center h-[70%] gap-5">
+                    <h3 id="hero-title" class="text-8xl">Sewa<span class="text-[#92af19]">ganj</span></h3>
+                    <h3 class="text-xl text-[#92af19] font-semibold">Services at your finger-tips...<span class="text-white "
+                            id="auto-type">Electrician</span></h3>
+                    <!-- Get Started -->
+                    <a class="text-3xl px-5 py-1 rounded-lg bg-[#92af19] w-[70%] text-center transition ease-in-out hover:scale-110 hover:text-[#92af19] hover:translate-y-3 hover:bg-white" href="/signup">Get
+                        Started</a>
+                </div>
+                <div class="col-span-2 flex justify-center items-center">
+                    <img id="hero-img" src="./images/hero.svg" alt="hero">
+                </div>
+            </div>
+
+        </div>
+        <!-- about -->
+        <div class="h-screen w-full bg-transparent" id="about">
+
+        </div>
+        <!-- services -->
+        <div class="h-screen w-full bg-gradient-to-b from-emerald-800 to-teal-400" id="services"></div>
+        <!-- contacts -->
+        <div class="h-screen w-full bg-transparent" id="contacts"></div>
+    </div>
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+        integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+        integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
