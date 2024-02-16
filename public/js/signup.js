@@ -43,3 +43,30 @@ home.addEventListener("mouseover", (coordinates) => {
         ease: "power3.out"
     })
 })
+
+
+
+
+document.getElementById('role').addEventListener('change', function() {
+    var form = document.getElementById('myForm');
+    var submitButton = document.getElementById('submitButton'); // Assuming 'submitButton' is the ID of your submit button
+    
+    // Remove any existing extra fields
+    var extraFields = document.getElementsByClassName('extraField');
+    while(extraFields[0]) {
+        extraFields[0].parentNode.removeChild(extraFields[0]);
+    }
+    
+    // Add extra fields based on selected option
+    if (this.value == 'vendor') {
+        var newField = document.createElement('input');
+        newField.type = 'text';
+        newField.name = 'contact';
+        newField.placeholder = 'Enter your Phone no.'
+        newField.className = 'extraField';
+        newField.style.width = '200px';
+        newField.style.height = '30px';
+        newField.style.borderRadius = '5px';
+        form.insertBefore(newField, submitButton); // Insert the new field before the submit button
+    }
+});

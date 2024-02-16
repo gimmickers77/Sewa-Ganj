@@ -26,9 +26,9 @@
       <div class="col-span-1">
         <div class="translate-x-72 translate-y-32 h-[100px] px-[10%] flex flex-col justify-center items-center gap-2">
           <img src="../images/profile.svg" alt="">
-          <h1 class="text-white uppercase"> <%= name %>
+          <h1 class="text-white uppercase"> <%= name %></h1>
             <h3 class="bg-slate-600 text-slate-300 rounded-full px-5"><%= email %></h3>
-          </h1>
+          <h3 class="text-white"><%= role %></h3>
           <form action="/logout?_method=DELETE" method="POST">
             <button class="text-white transition ease-in-out hover:scale-110 hover:text-[#92af19] px-5 hover:bg-white py-1 bg-[#92AF19] rounded-full" type="submit">Log Out</button>
           </form>

@@ -35,7 +35,7 @@ app.use(passport.session())
 app.use(methodOverride('_method'))
 
 app.get('/profile', checkAuthenticated, (req, res) => {
-    res.render('profile.ejs', { name: req.user.name, email: req.user.email})
+    res.render('profile.ejs', { name: req.user.name, email: req.user.email, role: req.user.role})
 })
 
 app.get('/electrician', checkAuthenticated, (req, res) => {
@@ -99,6 +99,7 @@ app.post('/signup', checkNotAuthenticated, async (req, res) => {
             id: Date.now().toString(),
             name: req.body.name,
             email: req.body.email,
+            role: req.body.role,
             password: hashedPassword
         })
         res.redirect('/login')

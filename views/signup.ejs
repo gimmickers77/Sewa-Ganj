@@ -34,18 +34,24 @@
         <div id="home"
             class="h-screen w-full over-flow bg-gradient-to-b from-emerald-800 to-teal-400 px-[10%] py-10 flex justify-center items-center overflow-hidden">
             <a class="absolute top-5 left-5 text-white " href="./">Home</a>
-            <div class="relative z-10 h-[500px] w-[400px] border-8 border-solid border-white rounded-3xl">
-                <form method="post" action="./signup" class="flex flex-col justify-center items-center gap-5 py-10">
+            <div class="relative z-10 h-[52x0px] w-[400px] border-8 border-solid border-white rounded-3xl">
+                <form id="myForm" method="post" action="./signup"
+                    class="flex flex-col justify-center items-center gap-3 py-10">
                     <img src="./images/logo.svg" alt="">
                     <input name="name" type="text" class="px-5 rounded-lg h-10" placeholder="Enter your name" required>
-                    <input name="email" type="text" class="px-5 rounded-lg h-10" placeholder="Enter your email" required>
-                    <input name="password" type="password" class="px-5 rounded-lg h-10" placeholder="Create a password" required>
+                    <input name="email" type="text" class="px-5 rounded-lg h-10" placeholder="Enter your email"
+                        required>
+                    <input name="password" type="password" class="px-5 rounded-lg h-10" placeholder="Create a password"
+                        required>
                     <input type="password" class="px-5 rounded-lg h-10" placeholder="Re-enter the password" required>
-                    <button
+                    <select class="w-[70%] h-7 rounded-md px-2" name="role" id="role">
+                        <option value="customer">customer</option>
+                        <option value="vendor">vendor</option>
+                    </select>
+                    <button id="submitButton"
                         class="text-white w-[50%] text-lg transition ease-in-out hover:scale-110 hover:text-[#92af19] px-5 hover:bg-white py-1 bg-[#92AF19] rounded-3xl"
                         type="submit">Sign up</button>
                     <h3 class=" text-white">Already have an account? <a class="underline" href="/login">Login</a></h3>
-
                 </form>
             </div>
 
