@@ -33,11 +33,31 @@ app.use(passport.session())
 app.use(methodOverride('_method'))
 
 app.get('/profile', checkAuthenticated, (req, res) => {
-    res.render('profile.ejs', { name: req.user.name })
+    res.render('profile.ejs', { name: req.user.name, email: req.user.email})
 })
 
 app.get('/electrician', checkAuthenticated, (req, res) => {
-    res.render('electrician.ejs', { name: req.user.name })
+    res.render('electrician.ejs')
+})
+
+app.get('/beautician', checkAuthenticated, (req, res) => {
+    res.render('beautician.ejs')
+})
+
+app.get('/electrician-types', checkAuthenticated, (req, res) => {
+    res.render('electrician-types.ejs')
+})
+
+app.get('/fan-types', checkAuthenticated, (req, res) => {
+    res.render('fan-types.ejs')
+})
+
+app.get('/vendor', checkAuthenticated, (req, res) => {
+    res.render('vendor.ejs')
+})
+
+app.get('/wire-types', checkAuthenticated, (req, res) => {
+    res.render('wire-types.ejs')
 })
 
 app.get('/login', checkNotAuthenticated, (req, res) => {
