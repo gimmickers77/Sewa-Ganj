@@ -7,6 +7,8 @@ const session = require('express-session')
 const methodOverride = require('method-override')
 
 const initializePassport = require('./passport-config')
+
+
 initializePassport(
     passport,
     email => users.find(user => user.email === email),
@@ -52,11 +54,11 @@ app.get('/fan-types', checkAuthenticated, (req, res) => {
     res.render('fan-types.ejs')
 })
 
-app.get('/vendor', checkNotAuthenticated, (req, res) => {
+app.get('/vendor', checkAuthenticated, (req, res) => {
     res.render('vendor.ejs')
 })
 
-app.get('/payment', checkNotAuthenticated, (req, res) => {
+app.get('/payment', checkAuthenticated, (req, res) => {
     res.render('payment.ejs')
 })
 
