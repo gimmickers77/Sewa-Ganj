@@ -26,6 +26,20 @@ gsap.to("#hero-content, #hero-img", {
 })
 
 
+gsap.from("#about-content", {
+    y: -100, 
+    opacity: 0,
+    scrollTrigger: {
+        trigger: "#about",
+        // markers: true,
+        start: "20% 80%",
+        end: "top top",
+        scrub: 2
+    }
+})
+
+
+
 const typed = new Typed("#auto-type", {
     strings: ["Electrician ", "Plumbing ","Cleaning ","Carpenter", "Salon ", "Barber ", "Laundry"],
     typeSpeed: 150,
@@ -80,33 +94,6 @@ home.addEventListener("mouseover", (coordinates) => {
 })
 
 
-
-var swiper = new Swiper(".mySwiper", {
-    slidesPerView: 1,
-    centeredSlides: false,
-    slidesPerGroupSkip: 1,
-    grabCursor: true,
-    keyboard: {
-      enabled: true,
-    },
-    breakpoints: {
-      769: {
-        slidesPerView: 2,
-        slidesPerGroup: 2,
-      },
-    },
-    scrollbar: {
-      el: ".swiper-scrollbar",
-    },
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-    },
-  });
 
 
 const year = new Date().getFullYear();
