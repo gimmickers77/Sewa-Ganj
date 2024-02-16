@@ -1,5 +1,3 @@
-
-
 const express = require('express')
 const app = express()
 const bcrypt = require('bcrypt')
@@ -38,6 +36,10 @@ app.get('/profile', checkAuthenticated, (req, res) => {
     res.render('profile.ejs', { name: req.user.name })
 })
 
+app.get('/electrician', checkAuthenticated, (req, res) => {
+    res.render('electrician.ejs', { name: req.user.name })
+})
+
 app.get('/login', checkNotAuthenticated, (req, res) => {
     res.render('login.ejs')
 })
@@ -50,7 +52,7 @@ app.get("/", (req, res) => {
 app.post('/login', checkNotAuthenticated, passport.authenticate('local', {
     successRedirect: '/profile',
     failureRedirect: '/',
-    failureFlash: true
+    failureFlash: true,
 }))
 
 
@@ -76,7 +78,7 @@ app.post('/signup', checkNotAuthenticated, async (req, res) => {
 })
 
 app.delete('/logout', (req, res) => {
-    req.logOut()
+    req.logOut(()=>{})
     res.redirect('/login')
 })
 
